@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="../css/styleGuid.css">
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <title>About Us</title>
+</head>
+
+<body>
+    <div class="home-page">
+        <section class="extra-cart">
+            <center><h1>CART</h1></center>
+
+        </section>
+        <section class="login-out hide">
+            <p style="padding: 20px 0;">
+                <span class="login" id="login">login </span>
+                <span class="login"> / </span>
+                <span class="login" id="register"> register</span>
+            </p>
+            <form action="" method="get" id="form-login">
+                <table class="table-log">
+                    <tr>
+                        <td>
+                            <label for="gmail" class="label-log">Gmail:</label>
+                        </td>
+                        <td>
+                            <input type="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password" class="label-log">password:</label>
+                        </td>
+                        <td>
+                            <input type="password" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="text-align: left; padding: 10px 0;">
+                            <input type="submit" id="log-submit" value="Login">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <form action="" method="get" id="form-register" class="hide">
+                <table  class="table-log">
+                    <tr>
+                        <td>
+                            <label for="" class="label-log">User Name</label>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gmail" class="label-log">Gmail:</label>
+                        </td>
+                        <td>
+                            <input type="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password" class="label-log">password:</label>
+                        </td>
+                        <td>
+                            <input type="password" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password" class="label-log">Repassword:</label>
+                        </td>
+                        <td>
+                            <input type="password" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="text-align: left; padding: 10px 0;">
+                            <input type="submit" id="log-register" value="register">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <div class="setting">
+            <i  class="log fa-solid fa-chevron-up" onclick="topFunction()" id="myBtn" title="Go to top"></i><br>
+            <i id="extra" style="font-size: 1.7rem;" class="log fa-solid fa-cart-shopping"></i><br>
+            <i class="log fa-sharp fa-solid fa-right-to-bracket" id="show-log"></i><br>
+            <a href="./html/styleGuid.html" class=" set fa-solid fa-gear"></a>
+        </div>
+        <header>
+            <div class=" header">
+                <div class="header-left">
+                    <div class="logo">
+                       <a href="../index.html"><img src="../img/Logo.svg" /></a> 
+                    </div>
+                    <div class="menu">
+                        <ul class="list-menu">
+                            <li id="menu-item" class="menu-item "><a href="../index.html">Home</a></li>
+                            <li class="menu-item"><a class="menu-item active" href="./about.html">About</a></li>
+                            <li class="menu-item"><a class="menu-item" href="./page.html">Pages</a></li>
+                            <li class="menu-item"><a class="menu-item" href="./Shop.html">Shop</a></li>
+                            <li class="menu-item"><a class="menu-item" href="#">Projects</a></li>
+                            <li class="menu-item"><a class="menu-item" href="#">News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="center header-right">
+                    <div class="center box-search">
+                        <a href="./Shop.html"><div class="in-search">
+                            <input type="search" class="find" placeholder="Enter keyword to search...">
+                            <button class="icon-search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div></a>
+                    </div>
+                    <a href="./cart.html"><div class="box-cart">
+                        <!-- <span class="icon-cart">
+                        </span> -->
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Cart(<span id="cart">0</span>)
+                    </div></a>
+                </div>
+            </div>
+        </header>
+        <div class="bannar">
+            <img src="../img/about/Banner-ab.png" alt="">
+        </div>
+        <main class="container">
+            <div class="why-us">
+                <div class="why-us-img">
+                    <img src="../img/about/why1.png" alt="">
+                </div>
+                <div class="why-us-content">
+                    <span class="o-t1" style="color: rgb(9, 255, 0); font-size:20px;">About!!</span><br>
+                    <h1  style="width:100%;">We do Creative Things for Success</h1>
+                    <p>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                    <p> Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                    <div class="" style="display:flex ;">
+                        <img style="width:50%" src="../img/about/01.png" alt="">
+                        <img style="width:50%" src="../img/about/02.png" alt="">
+                    </div>
+                    <button class="btn-bottom">Explore More</button>
+                </div>
+            </div>
+            <section>
+                <div class="why-us">
+                    <div class="why-us-content">
+                        <span class="o-t1" style="color: rgb(9, 255, 0); font-size:20px;">Why Choose us?</span><br>
+                        <h1  style="width:100%;">We do not buy from the open market & traders.</h1>
+                        <p>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard the 1500s, when an unknown.</p>
+                        <img style="height:100px ;" src="../img/about/1.png" alt="">
+                        <img style="height:100px  ;" src="../img/about/2.png" alt="">
+                    </div>
+                    <div class="why-us-img">
+                        <img src="../img/about/why2.png" alt="">
+                    </div>
+                </div>
+                <div class="why-container">
+                    <div class="why-box">
+                        <span><img src="../img/about/Icon.svg" alt=""></span>
+                        <h1>Return Policy</h1>
+                        <p>Simply dummy text of the printintypesetting industry.</p>
+                    </div>
+                    <div class="why-box">
+                        <span><img src="../img/about/Icon (1).svg" alt=""></span>
+                        <h1>100% Fresh</h1>
+                        <p>Simply dummy text of the printintypesetting industry.</p>
+                    </div>
+                    <div class="why-box">
+                        <span><img src="../img/about/Icon (2).svg" alt=""></span>
+                        <h1>Support 24/7</h1>
+                        <p>Simply dummy text of the printintypesetting industry.</p>
+                    </div>
+                    <div class="why-box">
+                        <span><img src="../img/about/Icon3.png" alt=""></span>
+                        <h1>Secured Payment</h1>
+                        <p>Simply dummy text of the printintypesetting industry.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="teams">
+                <div class="teams-title">
+                    <span class="o-t1" style="color: rgb(9, 255, 0); font-size:20px;">Why Choose us?</span><br>
+                    <h1>Our Organic Experts</h1>
+                    <p >Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's  <br> standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                </div>
+                <div class="teams-group">
+                   <a href="./team.html"> <div class="group-person skew">
+                        <img src="../img/about/Image.png" alt="">
+                        <h3>Giovani Bacardo</h3>
+                        <div class="person-info">
+                            <span class="o-t1" style="color: rgb(9, 255, 0); ">Farmer</span><br>
+                            <span>
+                                <a href="" class="fa-brands fa-instagram"></a>
+                                <a href="" class="fa-brands fa-facebook"></a>
+                                <a href="" class="fa-brands fa-twitter"></a>
+                            </span>
+
+                        </div>
+                    </div></a>
+                    <a href="./team.html"><div class="group-person skew">
+                        <img src="../img/about/Image (1).png" alt="">
+                        <h3>Marianne Loreno</h3>
+                        <div class="person-info">
+                            <span class="o-t1" style="color: rgb(9, 255, 0); ">Farmer</span><br>
+                            <span>
+                                <a href="" class="fa-brands fa-instagram"></a>
+                                <a href="" class="fa-brands fa-facebook"></a>
+                                <a href="" class="fa-brands fa-twitter"></a>
+                            </span>
+                        </div></a>
+                    </div>
+                   <a href="./team.html"> <div class="group-person skew">
+                        <img src="../img/about/Image (2).png" alt="">
+                        <h3>Riga Pelore</h3>
+                        <div class="person-info">
+                            <span class="o-t1" style="color: rgb(9, 255, 0);">Designer</span><br>
+                            <span>
+                                <a href="" class="fa-brands fa-instagram"></a>
+                                <a href="" class="fa-brands fa-facebook"></a>
+                                <a href="" class="fa-brands fa-twitter"></a>
+                            </span>
+
+                        </div>
+                    </div></a>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+            </section>
+            <section class="latteer">
+                <span class="o-t1" style="color: rgb(9, 255, 0);">About Us</span><br>
+                <h1>What We Offer for You</h1>
+                <div class="latteer-prd">
+                    <div class="latteer-box skew">
+                        <img src="../img/about/exp5.png" alt="">
+                        <span>Spicy</span>
+                    </div>
+                    <div class="latteer-box skew">
+                        <img src="../img/about/exp (1).png" alt="">
+                        <span>Nuts & Feesd</span>
+                    </div>                    
+                    <div class="latteer-box skew">
+                        <img src="../img/about/exp (2).png" alt="">
+                        <span>Fruits</span>
+                    </div>
+                    <div class="latteer-box skew">
+                        <img src="../img/about/exp (3).png" alt="">
+                        <span>Vegetable</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="new">
+                <div class="new-center">
+                    <div class="new-center-content">
+                        <h1>Subscribe to our Newsletter</h1>
+                        <form action="" class="form-sr-address">
+                            <input id="sr-address" type="email" name="" id="" placeholder="Your Email Address...">
+                            <input id="sr-address-sb" type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <h1></h1>
+            <div class="footer-left">
+                <ul class="footer-left-link">
+                    <li>
+                        <h1>Contact Us</h1>
+                    </li>
+                    <li class="link">
+                        <h4>Email</h4>
+                        <p>needhelp@Organia.com</p>
+                    </li>
+                    <li class="link">
+                        <h4>Phone</h4>
+                        <p>666 888 888</p>
+                    </li>
+                    <li class="link">
+                        <h4>Address</h4>
+                        <p>88 road, borklyn street, USA</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-mid">
+                <a href="../index.html"><img src="../img/Logo.svg" alt=""></a>
+                <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the
+                    printing</p>
+                <ul class="footer-mid-link">
+                    <li><a href="" class="fa-brands fa-instagram"></a></li>
+                    <li><a href="" class="fa-brands fa-facebook"></a></li>
+                    <li><a href="" class="fa-brands fa-twitter"></a></li>
+                    <li><a href="" class="fa-solid fa-phone-volume"></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-right">
+
+                <ul class="footer-right-link">
+                    <li>
+                        <h1>Utility Pages</h1>
+                    </li>
+                    <li>Style Guide</li>
+                    <li>404 Not Found</li>
+                    <li>Password Protected </li>
+                    <li>Licences </li>
+                    <li>Changelog</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="../js/styleGuid.js"></script>
+    <script src="../js/shared.js"></script>
+    <script src="../js/home.js"></script>
+</body>
+
+</html>

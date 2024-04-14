@@ -1,0 +1,128 @@
+.detail{
+    margin: auto;
+    width: 80%;
+    display: flex;
+}
+.detail-child{
+    width: 50%;
+}
+.detail-child-content{
+    padding: 50px;
+}
+.quant{
+    padding: 15px 20px;
+    border: 2px solid rgb(55, 58, 55);
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 0 3px;
+}
+.quant2{
+    background-color: #274C5B;
+    color: rgb(250, 250, 250);
+}
+.quant1:hover{
+    background-color: #274C5B;
+    color: aliceblue;
+}
+.quant2:hover{
+    background-color: rgb(255, 255, 255);
+    color: #274C5B;
+}
+.information{
+    text-align: center;
+}
+.if-text{
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+    font-style: italic;
+    color: #274C5B;
+}
+.service{
+    width: 350px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+.introduce{
+    display: flex;
+}
+.introduce-child{
+    width: 33%;
+}
+.introduce-left{
+    padding: 80px 0 ;
+    text-align: right;
+
+}
+.introduce-mid {
+}
+.introducer-right{
+    padding: 80px 0 0;
+    text-align: left;
+}
+.int-gand{
+    margin: 30px 0;
+}
+.int-gand img{
+    width: 50px;
+}
+.int-gand p{
+    font-style: italic;
+    color: #132228;
+}
+.video-container {
+    margin: 50px 0;
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+    @media(min-width: 600px) {
+      height: 100vh;
+    }
+  }
+  .video-container video {
+    object-fit: cover;
+    position: absolute;
+    /* height: 100%; */
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .callout {
+      width: 500px;
+      left: 50%;
+      top: 30%;
+      transform: translateX(-50%) translateY(-50%);
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      text-align: center;
+      z-index: 10;
+      color: rgb(255, 255, 255);
+      font-size: 1.5rem;
+}
+
+@media screen and (max-width:1023px) and (min-width:768px) {
+    .detail{
+        margin: auto;
+        width: 100%;
+    }
+    .detail-child{
+        width: 50%;
+    }
+}
+
+/* Responsive MOBILE */
+@media screen and (max-width:767px) {
+    .detail{
+        margin: auto;
+        width: 100%;
+        display: block;
+    }
+    .detail-child{
+        width: 100%;
+    }
+}
